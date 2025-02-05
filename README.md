@@ -3,4 +3,5 @@ CS30 lessons
 
 # to do list
  - [ ] folder structure
- - [ ] TBA
+ - [ ] Blank Intermediate-Advanced Proccessing Music Player Program
+ - [ ] 
