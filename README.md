@@ -11,5 +11,7 @@ CS30 lessons
      - [ ] Old Music PLayer Code Folder, contains previous your music player
  - [ ] Complete Case Study of Music Player Button
  - [ ] Materials Design
-     - [ ] TBA
- - [ ] TBA
+ - [ ] Functionality
+ - [ ] DIVS & Ratios
+ - [ ] upload image to index.html
+ - [ ] 
