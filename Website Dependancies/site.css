@@ -129,6 +129,7 @@ iframe {
 footer {
 	height: 100px;
 	background-color: #001bff;
+	font-size: 3vw; /* Adjust this value as needed */
 }
 
 #complete {
