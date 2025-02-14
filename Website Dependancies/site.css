@@ -139,3 +139,15 @@ footer {
 #incomplete {
 	background-color: rgb(3, 144, 60);
 }
+
+.fill-height {
+	height: 100%; /* Make the image fill the height of its container */
+	width: auto; /* Maintain the aspect ratio */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .image-container {
+	height: 300px; /* Set a specific height for the container */
+  }
