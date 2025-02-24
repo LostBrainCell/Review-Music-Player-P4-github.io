@@ -140,15 +140,16 @@ footer {
 }
 
 .fill-height {
-	height: 100%; /* Make the image fill the height of its container */
-	width: auto; /* Maintain the aspect ratio */
+	width: 100%; /* Make the image responsive */
+	height: auto; /* Maintain the aspect ratio */
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
   }
   
   .image-container {
-	height: 300px; /* Set a specific height for the container */
+	max-width: 100%; /* Ensure the container does not overflow */
+	height: auto; /* Maintain the aspect ratio */
   }
   .portfolio-section {
 	background-color: lightblue; /* Change this to your desired color */
