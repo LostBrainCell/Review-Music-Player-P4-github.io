@@ -155,9 +155,9 @@ footer {
   }
   .right {
 	background-color: #e5e5e5;
-	float: left;
+	float: center;
 	width: 20%;
 	padding: 15px;
 	margin-top: 7px;
-	text-align: center;
+	text-align: left;
   }
