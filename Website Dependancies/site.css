@@ -153,3 +153,11 @@ footer {
   .portfolio-section {
 	background-color: lightblue; /* Change this to your desired color */
   }
+  .right {
+	background-color: #e5e5e5;
+	float: left;
+	width: 20%;
+	padding: 15px;
+	margin-top: 7px;
+	text-align: center;
+  }
