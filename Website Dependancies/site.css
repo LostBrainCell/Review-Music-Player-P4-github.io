@@ -138,22 +138,36 @@ footer {
 #incomplete {
 	background-color: rgb(3, 144, 60);
 }
-
 .fill-container {
 	height: auto; /* Make the image fill the height of its container */
 	max-width: 100%; /* Maintain the aspect ratio */
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-  }
-  .portfolio-section {
+ }
+.portfolio-section {
 	background-color: lightblue; /* Change this to your desired color */
-  }
-  .right {
+}
+.right {
 	background-color: #96b3eb;
 	float: center;
 	width: 20%;
 	padding: 15px;
 	margin-top: 7px;
 	text-align: left;
-  }
+}
+.video-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	height: 0;
+	overflow: hidden;
+}
+  
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
