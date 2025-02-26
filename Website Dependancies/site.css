@@ -156,10 +156,10 @@ footer {
 	margin-top: 7px;
 	text-align: left;
 }
-.video-container {
+/*.video-container {
 	position: relative;
 	width: 100%;
-	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	padding-bottom: 56.25%; /* 16:9 aspect ratio 
 	height: 0;
 	overflow: hidden;
 }
@@ -170,4 +170,5 @@ footer {
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
+}code not work properly
+*/ 
