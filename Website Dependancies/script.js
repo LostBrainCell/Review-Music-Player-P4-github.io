@@ -125,3 +125,15 @@ function createChecklistItem(selector) {
   checklistItem.appendChild(checklistItemContent);
   section.appendChild(checklistItem);
 }
+
+// New Scrip Section
+
+
+
+
+
+
+
+
+
+
