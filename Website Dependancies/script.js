@@ -128,6 +128,21 @@ function createChecklistItem(selector) {
 
 // New Scrip Section
 
+document.addEventListener('DOMContentLoaded', function () {
+  const button = document.getElementById('reveal-video-btn');
+  const videoContainer = document.getElementById('hidden-video');
+
+  button.addEventListener('click', function () {
+    // Toggle the visibility of the video container
+    if (videoContainer.style.display === 'none') {
+      videoContainer.style.display = 'block'; // Show the video
+      button.textContent = 'Hide Video'; // Change button text
+    } else {
+      videoContainer.style.display = 'none'; // Hide the video
+      button.textContent = 'Reveal Video'; // Change button text
+    }
+  });
+});
 
 
 
