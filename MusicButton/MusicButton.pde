@@ -7,12 +7,8 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
 //Global Variables
-Boolean musicButton=false;
 
-
-
-
-
+int appWidth, appHeight, shorterSide;
 
 //
 void setup() {
@@ -20,6 +16,7 @@ void setup() {
   fullScreen(); 
   int appWidth = displayWidth;
   int appHeight = displayHeight;
+  shorterSide = ( displayWidth < displayHeight ) ? displayWidth : displayHeight ;
   //
   musicPlayerSetup();
   //Population
@@ -31,11 +28,13 @@ void setup() {
 }// End Setup
 //
 void draw() {
+  background(dayMode)
+  rect( musicButtonX, musicButtonY, musicButtonWidth, musicButtonHeight );
   if ( musicButton==true ) {
-    //Music Player Code
-    musicPlayerDraw();
-    
-    
+     //Music Player Code
+     musicPlayerDraw();
+    } else {
+      println("Music is OFF");
   } //End MUSIC Button
 }// End draw
 //
