@@ -26,6 +26,7 @@ void musicPlayerSetup() {
   musicMenuHeight = appHeight*1/2;
   //
   //DIVs
+  
   //rect(X, Y, Width, Height);
   //rect(musicButtonX, musicButtonY, musicButtonWidth, musicButtonHeight);
   //rect(musicMenuX, musicMenuY, musicMenuWidth, musicMenuHeight);
@@ -37,7 +38,7 @@ void musicPlayerSetup() {
   String musicPathway = "Music/";
   //Note: Download music and sound effects, then design your player with images, text, and 2D shapes
   //See Google Search: Atari pong logo free image download
-  String pongWorld = "Pong World";
+  String BeatIt = "Beat_Your_Competetion";
   //Add all files, CS20 Review is special OS Java Library
   //Including the reading of the number of files in the array
   String fileExtension_mp3 = ".mp3";
@@ -62,7 +63,13 @@ void musicPlayerMousePressed() {
   if ( mouseX>musicButtonX && mouseX<musicButtonX+musicButtonWidth && mouseY>musicButtonY && mouseY<musicButtonY+musicButtonHeight ) {
     musicButtonSwitch();
   }
-
+  //
+  // Activate the Music Menu on Mouse Pressed
+  if ( musicButton==true ) {
+    //IFs for Music Music Menu Mouse X&Y
+  } else {
+    //Regular Program overlapping Music Menu
+  }
 }// End MousePressed
 //
 void musicPlayerKeyPressed() {
@@ -93,8 +100,8 @@ void musicPlayerKeyPressed() {
   }
   if ( key=='L' || key=='l' ) playList[currentSong].loop(1); // Loop ONCE: Plays, then plays again, then stops & rewinds
   if ( key=='K' || key=='k' ) playList[currentSong].loop(); // Loop Infinitely //Parameter: BLANK or -1
-  if ( key=='F' || key=='f' ) playList[currentSong].skip( 10000 ); // Fast Forward, Rewind, & Play Again //Parameter: milliseconds
-  if ( key=='R' || key=='r' ) playList[currentSong].skip( -10000 ); // Fast Reverse & Play //Parameter: negative numbers
+  if ( key==CODED || key==RIGHT ) playList[currentSong].skip( 10000 ); // Fast Forward, Rewind, & Play Again //Parameter: milliseconds
+  if ( key==CODED || key==LEFT ) playList[currentSong].skip( -10000 ); // Fast Reverse & Play //Parameter: negative numbers
   if ( key=='M' || key=='m' ) { // MUTE
     //
     //MUTE Behaviour: stops electricty to speakers, does not stop file
@@ -166,10 +173,10 @@ void musicPlayerGUI( float X, float Y, float Width, float Height ) {
 //
 void musicButtonSwitch() {
   if ( musicButton==true ) {
-      musicButton=false;
-    } else {
-      musicButton=true;
-    }
+    musicButton=false;
+  } else {
+    musicButton=true;
+  }
 }//End Music Button Switch
 //
 //End Subprogram Music Player

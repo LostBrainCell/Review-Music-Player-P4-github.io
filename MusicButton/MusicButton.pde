@@ -19,22 +19,24 @@ void setup() {
   shorterSide = ( displayWidth < displayHeight ) ? displayWidth : displayHeight ;
   //
   musicPlayerSetup();
+  //
   //Population
   //
   //DIVs
   //rect(X, Y, Width, Height)
   //
-  
 }// End Setup
 //
 void draw() {
-  background(dayMode)
+  background(dayMode);
   rect( musicButtonX, musicButtonY, musicButtonWidth, musicButtonHeight );
   if ( musicButton==true ) {
      //Music Player Code
      musicPlayerDraw();
     } else {
       println("Music is OFF");
+      //Program Specific Code
+      rect( musicMenuX, musicMenuY, musicMenuWidth, musicMenuHeight );
   } //End MUSIC Button
 }// End draw
 //
