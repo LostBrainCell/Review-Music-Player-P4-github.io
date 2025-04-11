@@ -18,8 +18,8 @@ color MusicButtonColour=#5894E5;
 void musicPlayerSetup() {
   //Population
   musicButtonWidth = shorterSide*1/20;
-  musicButtonX = appWidth - musicButtonWidth;
-  musicButtonY = appHeight*0;
+  musicButtonX = 0;
+  musicButtonY = 0;
   musicButtonHeight = shorterSide*1/20;
   musicMenuX = appWidth*1/4;
   musicMenuY = appHeight*1/4;
