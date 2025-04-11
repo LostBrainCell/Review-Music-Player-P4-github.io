@@ -13,6 +13,7 @@ float musicMenuX, musicMenuY, musicMenuWidth, musicMenuHeight;
 //
 color nightMode=#FFFF00, dayMode=#FFFFFF;
 color resetDefaultColour=#FFFFFF;
+color MusicButtonColour=#5894E5;
 //
 void musicPlayerSetup() {
   //Population
@@ -35,15 +36,16 @@ void musicPlayerSetup() {
   minim = new Minim(this);
   //String[] fileName = new String[ numberOfSongs ];
   //Alternate Reading of Array
-  String musicPathway = "Review-Music-Player-P4-github.io/Music/";
+  String musicPathway = "Music/";
+  String MusicConnect = "../" + musicPathway;
   //Note: Download music and sound effects, then design your player with images, text, and 2D shapes
   //See Google Search: Atari pong logo free image download
-  String BeatIt = "Beat_Your_Competetion";
+  String BeatIt = "Beat_Your_Competition";
   //Add all files, CS20 Review is special OS Java Library
   //Including the reading of the number of files in the array
   String fileExtension_mp3 = ".mp3";
   //
-  String file = musicPathway + BeatIt + fileExtension_mp3; //relative pathway or directory
+  String file = MusicConnect + BeatIt + fileExtension_mp3; //relative pathway or directory
   println( file );
   //Create a FOR loop to loadFile() a changing songName
   playList[ currentSong ] = minim.loadFile( file ); //ERROR: Verify Spelling & Library installed, Sketch / Import Library

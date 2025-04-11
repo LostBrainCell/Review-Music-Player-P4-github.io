@@ -14,8 +14,8 @@ int appWidth, appHeight, shorterSide;
 void setup() {
   //Display 
   fullScreen(); 
-  int appWidth = displayWidth;
-  int appHeight = displayHeight;
+  appWidth = displayWidth;
+  appHeight = displayHeight;
   shorterSide = ( displayWidth < displayHeight ) ? displayWidth : displayHeight ;
   //
   musicPlayerSetup();
