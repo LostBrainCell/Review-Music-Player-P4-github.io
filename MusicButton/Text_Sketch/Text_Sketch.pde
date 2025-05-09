@@ -52,7 +52,7 @@ void setup() {
   }
   //
   //
-  /* This Code is isn't neccessary
+  /* This Code isn't necessary here
    float fontSize = 30 ;//Keep changing number until fonts fits
    println("Manuel entered font size", fontSize);
    float CalibriBoldAspectRatio = fontSize / titleHeight;
