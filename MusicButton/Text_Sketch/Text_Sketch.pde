@@ -61,7 +61,7 @@ void setup() {
    textFont(appFont, fontSize);
    while ( footerWidth < textWidth(footer) ) {
    fontSize = fontSize*0.99;
-   }
+   } 
    //println(); //Skip a line or something
    //
    //Minimmum lines of code and something more and stuff
